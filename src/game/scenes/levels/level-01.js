@@ -43,6 +43,13 @@ export default class Level01 extends Base2DScene {
     // TODO: Möchten wir zusätzliche Layers von der Karte ertellen lassen, oder
     // spezifische Spielobjekte erstellen, dann können wir das hier machen.
     // Besser wäre aber die jeweiligen Methoden zu überschreiben.
+    this.tweens.add({
+      targets: this.cameras.main.followOffset,
+      x: 400,
+      duration: 500,
+      ease: "Power3",
+      yoyo: true,
+    })
   }
 
   /**
