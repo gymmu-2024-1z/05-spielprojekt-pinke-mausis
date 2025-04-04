@@ -1,3 +1,4 @@
+import Flower from "../../gameObjects/pickups/flower"
 import Base2DScene from "../base-2d-scene"
 
 /**
@@ -18,5 +19,15 @@ export default class Level03 extends Base2DScene {
 
   create() {
     super.create("map-level-03")
+  }
+
+  pickUp(actor, item) {
+    super.pickUp(actor, item)
+
+    if (item instanceof Flower) {
+      if (item.props.goToWorld === "level-02") {
+        this.scene.start("level-02")
+      }
+    }
   }
 }

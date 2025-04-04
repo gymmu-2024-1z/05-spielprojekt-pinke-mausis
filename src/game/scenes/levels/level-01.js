@@ -75,10 +75,6 @@ export default class Level01 extends Base2DScene {
       this.player.addKey("level-02")
       this.player.increaseSpeed(100)
       this.player.heal(item.props.restoreHp || 0)
-
-      if (item.props.goToWorld === "level-02") {
-        this.scene.start("level-02")
-      }
     } else if (item instanceof Mushroom) {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
