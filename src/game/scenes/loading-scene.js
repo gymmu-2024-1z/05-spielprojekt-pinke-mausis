@@ -14,7 +14,11 @@ export default class LoadingScene extends Phaser.Scene {
    */
   preload() {
     // Lade das Spritesheet für den Spieler.
-    this.load.spritesheet("player", "./assets/player.png", {
+    this.load.spritesheet("player", "./assets/player-2.png", {
+      frameWidth: 32,
+      frameHeight: 32,
+    })
+    this.load.spritesheet("mouse", "./assets/player.png", {
       frameWidth: 32,
       frameHeight: 32,
     })
@@ -100,6 +104,15 @@ export default class LoadingScene extends Phaser.Scene {
       frames: this.anims.generateFrameNumbers("player", {
         start: 0,
         end: 2,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+    this.anims.create({
+      key: "mouse_down",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 1,
+        end: 4,
       }),
       frameRate: 10,
       repeat: -1,
