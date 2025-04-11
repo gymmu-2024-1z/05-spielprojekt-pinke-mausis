@@ -15,6 +15,15 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
+
+    this.setControlls()
+  }
+
+  setControlls() {
+    this.a = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
+    this.w = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
+    this.s = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S)
+    this.d = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D)
   }
 
   /**
@@ -38,32 +47,27 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     const { body } = this
     let isIdle = true
 
-    this.stepsLeft--
-    if (this.stepsLeft <= 0) {
-      this.move = getRandomDirection()
-      this.stepsLeft = 60 + Math.floor(Math.random() * 60)
-    }
-
     this.body.setVelocityX(0)
     this.body.setVelocityY(0)
 
-    if (this.move === "left") {
+    if (this.a.isDown) {
       body.setVelocityX(-this.speed)
       if (isIdle) this.anims.play("mouse_left", true)
       isIdle = false
     }
-    if (this.move === "right") {
+
+    if (this.w.isRight) {
       this.body.setVelocityX(this.speed)
       if (isIdle) this.anims.play("mouse_right", true)
       isIdle = false
     }
 
-    if (this.move === "up") {
+    if (this.s.isUp) {
       body.setVelocityY(-this.speed)
       if (isIdle) this.anims.play("mouse_up", true)
       isIdle = false
     }
-    if (this.move === "down") {
+    if (this.d.isDown) {
       body.setVelocityY(this.speed)
       if (isIdle) this.anims.play("mouse_down", true)
       isIdle = false

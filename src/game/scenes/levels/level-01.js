@@ -74,11 +74,11 @@ export default class Level01 extends Base2DScene {
       // Das Objekt ist von der Klasse `Flower`
       this.player.addKey("level-02")
       this.player.increaseSpeed(100)
-      this.player.heal(item.props.restoreHp || 0)
+      this.player.heal(20)
     } else if (item instanceof Mushroom) {
       // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
-      this.player.damage(item.props.damageHp || 0)
+      this.player.damage(200)
 
       // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
       // passieren soll.
