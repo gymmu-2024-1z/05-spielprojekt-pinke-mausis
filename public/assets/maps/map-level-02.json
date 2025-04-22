@@ -58,6 +58,12 @@
          "id":2,
          "name":"Obstacles",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"collides",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":30,
@@ -291,7 +297,7 @@
                         {
                          "name":"goToWorld",
                          "type":"string",
-                         "value":"level-03"
+                         "value":"level-01"
                         }],
                  "rotation":0,
                  "type":"",
@@ -327,6 +333,15 @@
          "tiles":[
                 {
                  "id":1,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":2,
                  "properties":[
                         {
                          "name":"collides",
