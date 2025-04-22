@@ -40,7 +40,7 @@
  </layer>
  <layer id="2" name="Obstacles" width="55" height="30">
   <properties>
-   <property name="collides" value=""/>
+   <property name="collides" type="bool" value="true"/>
   </properties>
   <data encoding="csv">
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6,6,0,0,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,8,0,8,2,2,2,2,2,2,2,
