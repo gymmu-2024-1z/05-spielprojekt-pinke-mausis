@@ -12,5 +12,9 @@
       "filename": "blueberry",
       "frame": { "x": 35, "y": 71, "w": 32, "h": 32 }
     }
+    {
+      "filename": "bluestrawberry",
+      "frame": { "x": 35, "y": 71, "w": 32, "h": 32 }
+    }
   ]
 }
