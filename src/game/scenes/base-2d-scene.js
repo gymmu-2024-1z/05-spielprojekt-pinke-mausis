@@ -135,6 +135,13 @@ export default class Base2DScene extends Phaser.Scene {
       () => true,
       this,
     )
+    this.physics.add.collider(
+      this.npcs,
+      this.doors,
+      this.enterDoor,
+      () => true,
+      this,
+    )
   }
 
   npcCollideObstacles(npc, obstacle) {
@@ -169,17 +176,9 @@ export default class Base2DScene extends Phaser.Scene {
    * definiert und wird in **Tiled** gesetzt.
    */
   enterDoor(actor, door) {
-    const { goToWorld, needKey } = door.props
+    const { goToWorld } = door.props
     if (goToWorld == null) return
-    if (needKey == null) {
-      this.scene.start(goToWorld)
-      return
-    }
-
-    if (actor.keys[needKey] > 0) {
-      this.scene.start(goToWorld)
-      return
-    }
+    this.scene.start(goToWorld)
   }
 
   update() {

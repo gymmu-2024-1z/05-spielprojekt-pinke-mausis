@@ -63,19 +63,19 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
       isIdle = false
     }
 
-    if (this.w.isRight) {
-      this.body.setVelocityX(this.speed)
+    if (this.w.isDown) {
+      this.body.setVelocityY(-this.speed)
       if (isIdle) this.anims.play("mouse_right", true)
       isIdle = false
     }
 
-    if (this.s.isUp) {
-      body.setVelocityY(-this.speed)
+    if (this.s.isDown) {
+      body.setVelocityY(this.speed)
       if (isIdle) this.anims.play("mouse_up", true)
       isIdle = false
     }
     if (this.d.isDown) {
-      body.setVelocityY(this.speed)
+      body.setVelocityX(this.speed)
       if (isIdle) this.anims.play("mouse_down", true)
       isIdle = false
     }
