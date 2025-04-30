@@ -16,7 +16,14 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
 
-    this.setControls()
+    this.setControlls()
+  }
+
+  setControlls() {
+    this.a = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
+    this.w = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
+    this.s = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S)
+    this.d = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D)
   }
 
   /**
@@ -55,18 +62,19 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
       if (isIdle) this.anims.play("mouse_left", true)
       isIdle = false
     }
-    if (this.d.isDown) {
+
+    if (this.w.isRight) {
       this.body.setVelocityX(this.speed)
       if (isIdle) this.anims.play("mouse_right", true)
       isIdle = false
     }
 
-    if (this.w.isDown) {
+    if (this.s.isUp) {
       body.setVelocityY(-this.speed)
       if (isIdle) this.anims.play("mouse_up", true)
       isIdle = false
     }
-    if (this.s.isDown) {
+    if (this.d.isDown) {
       body.setVelocityY(this.speed)
       if (isIdle) this.anims.play("mouse_down", true)
       isIdle = false
