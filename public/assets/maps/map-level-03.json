@@ -210,6 +210,12 @@
                  "height":32,
                  "id":7,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":100
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -222,6 +228,12 @@
                  "height":32,
                  "id":8,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":20
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -234,6 +246,12 @@
                  "height":32,
                  "id":9,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":30
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -246,6 +264,12 @@
                  "height":32,
                  "id":10,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":2
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -258,6 +282,12 @@
                  "height":32,
                  "id":11,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":30
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -270,6 +300,17 @@
                  "height":32,
                  "id":13,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"damagesHp",
+                         "type":"int",
+                         "value":20
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -294,6 +335,12 @@
                  "height":32,
                  "id":15,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -306,6 +353,12 @@
                  "height":32,
                  "id":16,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -318,6 +371,12 @@
                  "height":32,
                  "id":17,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -474,6 +533,12 @@
                  "height":32,
                  "id":30,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"damageHp",
+                         "type":"int",
+                         "value":30
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -522,6 +587,12 @@
                  "height":32,
                  "id":34,
                  "name":"Mushrooom",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -534,6 +605,12 @@
                  "height":32,
                  "id":35,
                  "name":"Mushroom",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -558,6 +635,12 @@
                  "height":32,
                  "id":37,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -570,6 +653,12 @@
                  "height":32,
                  "id":38,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -582,6 +671,12 @@
                  "height":32,
                  "id":41,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -594,6 +689,12 @@
                  "height":32,
                  "id":42,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -606,6 +707,12 @@
                  "height":32,
                  "id":43,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -618,6 +725,12 @@
                  "height":32,
                  "id":44,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -630,6 +743,17 @@
                  "height":32,
                  "id":45,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"restoreHp",
+                         "type":"int",
+                         "value":50
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -673,7 +797,7 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":47,
+ "nextobjectid":54,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
