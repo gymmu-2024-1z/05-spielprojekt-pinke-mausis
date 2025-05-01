@@ -108,11 +108,6 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        }, 
-                        {
-                         "name":"restoreHp",
-                         "type":"int",
-                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -131,11 +126,6 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        }, 
-                        {
-                         "name":"restoreHp",
-                         "type":"int",
-                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -154,11 +144,6 @@
                          "name":"damageHp",
                          "type":"int",
                          "value":10
-                        }, 
-                        {
-                         "name":"restoreHp",
-                         "type":"int",
-                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -325,6 +310,12 @@
                  "height":32,
                  "id":48,
                  "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"colllides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -337,6 +328,12 @@
                  "height":32,
                  "id":49,
                  "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

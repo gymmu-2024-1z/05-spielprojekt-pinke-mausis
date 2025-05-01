@@ -91,10 +91,10 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -299,7 +299,7 @@
                  "gid":10,
                  "height":32,
                  "id":13,
-                 "name":"Flower",
+                 "name":"Blueberry",
                  "properties":[
                         {
                          "name":"collides",
@@ -322,7 +322,13 @@
                  "gid":10,
                  "height":32,
                  "id":14,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -334,12 +340,12 @@
                  "gid":10,
                  "height":32,
                  "id":15,
-                 "name":"Flower",
+                 "name":"Blueberry",
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"",
@@ -352,7 +358,7 @@
                  "gid":10,
                  "height":32,
                  "id":16,
-                 "name":"Flower",
+                 "name":"Blueberry",
                  "properties":[
                         {
                          "name":"collides",
@@ -370,12 +376,12 @@
                  "gid":10,
                  "height":32,
                  "id":17,
-                 "name":"Flower",
+                 "name":"Blueberry",
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
-                         "value":false
+                         "value":true
                         }],
                  "rotation":0,
                  "type":"",
@@ -388,7 +394,13 @@
                  "gid":10,
                  "height":32,
                  "id":18,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -400,7 +412,13 @@
                  "gid":10,
                  "height":32,
                  "id":19,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -412,7 +430,13 @@
                  "gid":10,
                  "height":32,
                  "id":20,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -424,7 +448,13 @@
                  "gid":10,
                  "height":32,
                  "id":21,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"Collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -436,7 +466,13 @@
                  "gid":10,
                  "height":32,
                  "id":22,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -448,7 +484,13 @@
                  "gid":10,
                  "height":32,
                  "id":23,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -460,7 +502,13 @@
                  "gid":10,
                  "height":32,
                  "id":24,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -472,7 +520,13 @@
                  "gid":10,
                  "height":32,
                  "id":25,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -484,7 +538,13 @@
                  "gid":10,
                  "height":32,
                  "id":26,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -496,7 +556,13 @@
                  "gid":10,
                  "height":32,
                  "id":27,
-                 "name":"Flower",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -508,7 +574,13 @@
                  "gid":10,
                  "height":32,
                  "id":28,
-                 "name":"Mushroom",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -520,7 +592,13 @@
                  "gid":10,
                  "height":32,
                  "id":29,
-                 "name":"Mushroom",
+                 "name":"Blueberry",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -532,12 +610,17 @@
                  "gid":10,
                  "height":32,
                  "id":30,
-                 "name":"Mushroom",
+                 "name":"Blueberry",
                  "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"damageHp",
                          "type":"int",
-                         "value":30
+                         "value":10
                         }],
                  "rotation":0,
                  "type":"",
@@ -550,7 +633,13 @@
                  "gid":4,
                  "height":32,
                  "id":31,
-                 "name":"Mushroom",
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -562,7 +651,13 @@
                  "gid":4,
                  "height":32,
                  "id":32,
-                 "name":"Mushroom",
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -574,7 +669,13 @@
                  "gid":4,
                  "height":32,
                  "id":33,
-                 "name":"Mushroom",
+                 "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -586,12 +687,17 @@
                  "gid":4,
                  "height":32,
                  "id":34,
-                 "name":"Mushrooom",
+                 "name":"Flower",
                  "properties":[
+                        {
+                         "name":"colllides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
-                         "value":50
+                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -604,12 +710,17 @@
                  "gid":4,
                  "height":32,
                  "id":35,
-                 "name":"Mushroom",
+                 "name":"Flower",
                  "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
-                         "value":50
+                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -623,6 +734,12 @@
                  "height":32,
                  "id":36,
                  "name":"Flower",
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -637,9 +754,14 @@
                  "name":"Flower",
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"restoreHp",
                          "type":"int",
-                         "value":50
+                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -655,9 +777,14 @@
                  "name":"Flower",
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"restoreHp",
                          "type":"int",
-                         "value":50
+                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -673,9 +800,14 @@
                  "name":"Flower",
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"restoreHp",
                          "type":"int",
-                         "value":50
+                         "value":20
                         }],
                  "rotation":0,
                  "type":"",
@@ -690,6 +822,11 @@
                  "id":42,
                  "name":"Flower",
                  "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -709,6 +846,11 @@
                  "name":"Flower",
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"restoreHp",
                          "type":"int",
                          "value":50
@@ -726,6 +868,11 @@
                  "id":44,
                  "name":"Flower",
                  "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"restoreHp",
                          "type":"int",
@@ -797,7 +944,7 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":54,
+ "nextobjectid":57,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.2",
@@ -806,6 +953,65 @@
         {
          "columns":4,
          "firstgid":1,
+         "image":"..\/tileset.png",
+         "imageheight":108,
+         "imagewidth":136,
+         "margin":1,
+         "name":"tileset",
+         "spacing":2,
+         "tilecount":12,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "id":1,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":2,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":4,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":5,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":7,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }],
+         "tilewidth":32
+        }, 
+        {
+         "columns":4,
+         "firstgid":13,
          "image":"..\/tileset.png",
          "imageheight":108,
          "imagewidth":136,
