@@ -53,19 +53,16 @@
   <object id="1" name="Mushroom" gid="3" x="160" y="256" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="2" name="Mushroom" gid="3" x="320" y="256" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="3" name="Mushroom" gid="3" x="544" y="288" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="10"/>
-    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="4" name="Flower" gid="4" x="512" y="320" width="32" height="32">
@@ -93,8 +90,16 @@
   <object id="45" name="Blueberry" gid="10" x="268.35" y="395.305" width="32" height="32"/>
   <object id="46" name="Blueberry" gid="10" x="263.731" y="371.695" width="32" height="32"/>
   <object id="47" name="Blueberry" gid="10" x="241.147" y="394.792" width="32" height="32"/>
-  <object id="48" name="Blueberry" gid="10" x="281.182" y="354.244" width="32" height="32"/>
-  <object id="49" name="Blueberry" gid="10" x="243.2" y="370.155" width="32" height="32"/>
+  <object id="48" name="Blueberry" gid="10" x="281.182" y="354.244" width="32" height="32">
+   <properties>
+    <property name="colllides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="49" name="Blueberry" gid="10" x="243.2" y="370.155" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="50" name="Blueberry" gid="10" x="249.873" y="349.624" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="Doors">
