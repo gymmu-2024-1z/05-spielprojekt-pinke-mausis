@@ -108,14 +108,53 @@ export default class LoadingScene extends Phaser.Scene {
       frameRate: 10,
       repeat: -1,
     })
+  }
+
     this.anims.create({
-      key: "mouse_down",
+      key: "mouse_idle",
       frames: this.anims.generateFrameNumbers("mouse", {
-        start: 1,
-        end: 4,
+        start: 2,
+        end: 2,
       }),
       frameRate: 10,
       repeat: -1,
     })
-  }
+
+    this.anims.create({
+      key: "mouse_right",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 11,
+        end: 13,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+
+    this.anims.create({
+      key: "mouse_left",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 6,
+        end: 8,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+    this.anims.create({
+      key: "mouse_up",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 16,
+        end: 18,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+    this.anims.create({
+      key: "mouse_down",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 0,
+        end: 2,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
 }
