@@ -109,7 +109,7 @@ export default class LoadingScene extends Phaser.Scene {
       repeat: -1,
     })
   }
-
+  createAnimations() {
     this.anims.create({
       key: "mouse_idle",
       frames: this.anims.generateFrameNumbers("mouse", {
@@ -157,4 +157,5 @@ export default class LoadingScene extends Phaser.Scene {
       frameRate: 10,
       repeat: -1,
     })
+  }
 }
