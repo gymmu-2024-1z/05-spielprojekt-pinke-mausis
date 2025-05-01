@@ -74,8 +74,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_right",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 6,
-        end: 8,
+        start: 8,
+        end: 10,
       }),
       frameRate: 10,
       repeat: -1,
@@ -84,8 +84,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_left",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 3,
-        end: 5,
+        start: 4,
+        end: 6,
       }),
       frameRate: 10,
       repeat: -1,
@@ -93,8 +93,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_up",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 9,
-        end: 11,
+        start: 12,
+        end: 14,
       }),
       frameRate: 10,
       repeat: -1,
@@ -103,7 +103,7 @@ export default class LoadingScene extends Phaser.Scene {
       key: "player_down",
       frames: this.anims.generateFrameNumbers("player", {
         start: 0,
-        end: 2,
+        end: 3,
       }),
       frameRate: 10,
       repeat: -1,
