@@ -2,7 +2,7 @@ import Phaser from "phaser"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
   hp = 10
-  maxHp = 100
+  maxHp = 200
   #speed = 100
   stepsLeft = 60
   move = "left"
