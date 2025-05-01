@@ -7,24 +7,17 @@ import Base2DScene from "../base-2d-scene"
  */
 export default class Level01 extends Base2DScene {
   /**
-   * Der Konstuktor wird von Phaser verwendet um die Szene zu erstellen.
+   * Der Konstruktor wird von Phaser verwendet, um die Szene zu erstellen.
    */
   constructor() {
-    // Damit rufen wir den Konstruktor von `Base2DScene` auf, und können
-    // Optionen an die Szene übergeben. Das brauchen wir damit Phaser einen
-    // Namen/Schlüssel für die Szene hat. Damit können wir später die Szene
-    // wechseln, wenn wir das brauchen.
     super({ key: "level-01" })
   }
 
   /**
-   * Hier werden alle Resourcen geladen, die spezifisch für dieses Level / diese
+   * Hier werden alle Ressourcen geladen, die spezifisch für dieses Level / diese
    * Szene benötigt werden.
    */
   preload() {
-    // Lade die Karte für das aktuelle Level. Der erste Parameter ist der Name
-    // unter dem die Karte gespeichert wird. Der zweite Parameter ist die
-    // Kartendatei mit allen Daten drin.
     this.load.tilemapTiledJSON(
       "map-level-01",
       "./assets/maps/map-level-01.json",
@@ -35,14 +28,26 @@ export default class Level01 extends Base2DScene {
    * Mit der Methode werden alle Spielobjekte für eine Szene erstellt.
    */
   create() {
-    // Wir müssen hier die `create`-Methode der Klasse `Base2DScene` aufrufen,
-    // denn dort ist bereits beschrieben wie die Spielwelt nach der Kartendatei
-    // erstellt werden muss.
+    // Sicherstellen, dass der Spieler korrekt erstellt wurde
+    if (!this.player) {
+      console.error("Player object is missing in create method.")
+
+      // Wenn der Spieler nicht existiert, initialisieren wir ihn hier (als Beispiel):
+      this.player = this.add.sprite(100, 100, "player") // Initialisiere einen neuen Spieler.
+
+      // Optional: Setze maxHp, hp und andere Attribute des Spielers, wenn erforderlich.
+      this.player.maxHp = 100
+      this.player.hp = 100
+      this.player.speed = 100
+    }
+
+    // Setze das Level zurück, falls es neu gestartet wird.
+    this.resetLevel()
+
+    // Wir rufen die Basis-Methode `create` auf, um die Welt basierend auf der Karte zu erstellen.
     super.create("map-level-01")
 
-    // TODO: Möchten wir zusätzliche Layers von der Karte ertellen lassen, oder
-    // spezifische Spielobjekte erstellen, dann können wir das hier machen.
-    // Besser wäre aber die jeweiligen Methoden zu überschreiben.
+    // Kamera-Effekte setzen (optional).
     this.tweens.add({
       targets: this.cameras.main.followOffset,
       x: 400,
@@ -53,48 +58,49 @@ export default class Level01 extends Base2DScene {
   }
 
   /**
-   * @override Hier wird die Funktionalität der Base2DScene-Klasse überschrieben.
+   * Setze alle zustandsabhängigen Elemente im Level zurück (z. B. Gesundheit, Position, etc.).
+   */
+  resetLevel() {
+    // Sicherstellen, dass der Spieler nicht null ist
+    if (this.player) {
+      // Setze den Spielerzustand zurück (Gesundheit, Geschwindigkeit, etc.).
+      this.player.hp = this.player.maxHp // Setze die Gesundheit auf den maximalen Wert zurück
+      this.player.speed = 100 // Setze die Geschwindigkeit zurück, falls sie sich während des Spiels geändert hat
+
+      // Setze andere Statistiken, Items oder Position zurück
+      this.player.setPosition(100, 100) // Setze die Spielerposition auf den Startpunkt zurück (Beispiel)
+      this.player.setScale(1) // Setze die Spielerskalierung zurück (für den Fall, dass sie verändert wurde)
+    } else {
+      console.error("Player object is not initialized properly.")
+    }
+  }
+
+  /**
+   * @override Überschreibt die Funktionalität der Base2DScene-Klasse.
    *
    * Diese Methode wird immer dann aufgerufen, wenn der Spieler eine
-   * überscheidung mit einem Spielobjekt hat, das aufgenommen werden kann. Wir
-   * können hier bestimmen was in einem solchen fall passieren sollte. Die
-   * Parameter werden von Phaser in die Methode eingefügt, da haben wir keine
-   * direkte kontrolle darüber.
-   *
-   * @param {*} actor Der Spieler der mit dem Objekt überschneidet.
-   * @param {*} item Das Objekt mit dem der Spieler eine überschneitung hat.
+   * Überschneidung mit einem Spielobjekt hat, das aufgenommen werden kann.
    */
   pickUp(actor, item) {
     super.pickUp(actor, item)
 
-    // TODO: Hier wird die Logik für Kollisionen von Spielobjekten geändert. Das
-    // ist pro Level anders. Wenn eine Logik für alle Levels gelten soll, dann
-    // muss dies in `Base2DScene` angepasst werden.
+    // Behandelt, was passiert, wenn der Spieler eine Blume oder einen Pilz aufnimmt.
     if (item instanceof Flower) {
-      // Das Objekt ist von der Klasse `Flower`
       this.player.addKey("level-02")
       this.player.increaseSpeed(100)
       this.player.heal(20)
     } else if (item instanceof Mushroom) {
-      // Das Objekt ist von der Klasse `Mushroom`
       this.player.decreaseSpeed(100)
       this.player.damage(200)
+    }
+  }
 
-      // TODO: Aktivieren Sie das hier, wenn ein Effekt über eine gewisse Zeit
-      // passieren soll.
-      // Hier wird der Spieler halb so gross, und mit jedem Frame wird er wieder
-      // normaler. Nach 3 Sekunden erreicht er seine normale Grösse.
-      // this.tweens.addCounter({
-      //   from: 0.5,
-      //   to: 1,
-      //   ease: "Linear",
-      //   duration: 3000,
-      //   repeat: 0,
-      //   onUpdate: (tween) => {
-      //     const val = tween.getValue()
-      //     this.player.setScale(val)
-      //   },
-      // })
+  update() {
+    super.update()
+
+    // Sicherstellen, dass der Spieler existiert, bevor wir auf seine Eigenschaften zugreifen
+    if (this.player && this.player.hp <= 0) {
+      this.scene.start("GameOverScene")
     }
   }
 }
