@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="55" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="54">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="55" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="57">
  <editorsettings>
   <export target="../public/assets/maps/map-level-03.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="tileset.tsx"/>
+ <tileset firstgid="13" source="tileset..tsx"/>
  <layer id="1" name="Background" width="55" height="30">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -77,10 +78,10 @@
  </layer>
  <layer id="6" name="Decoration" width="55" height="30">
   <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -149,86 +150,163 @@
     <property name="damageHp" type="int" value="30"/>
    </properties>
   </object>
-  <object id="13" name="Flower" gid="10" x="1120.6" y="640.018" width="32" height="32">
+  <object id="13" name="Blueberry" gid="10" x="1120.6" y="640.018" width="32" height="32">
    <properties>
     <property name="collides" type="bool" value="true"/>
     <property name="damagesHp" type="int" value="20"/>
    </properties>
   </object>
-  <object id="14" name="Flower" gid="10" x="1114.24" y="671.855" width="32" height="32"/>
-  <object id="15" name="Flower" gid="10" x="1117.42" y="703.693" width="32" height="32">
+  <object id="14" name="Blueberry" gid="10" x="1114.24" y="671.855" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="15" name="Blueberry" gid="10" x="1117.42" y="703.693" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="Blueberry" gid="10" x="1154.03" y="708.468" width="32" height="32">
    <properties>
     <property name="collides" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="16" name="Flower" gid="10" x="1154.03" y="708.468" width="32" height="32">
+  <object id="17" name="Blueberry" gid="10" x="1144.48" y="676.631" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="18" name="Blueberry" gid="10" x="1176.32" y="681.406" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="19" name="Blueberry" gid="10" x="1177.91" y="641.609" width="32" height="32">
    <properties>
     <property name="collides" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="17" name="Flower" gid="10" x="1144.48" y="676.631" width="32" height="32">
+  <object id="20" name="Blueberry" gid="10" x="1179.5" y="606.588" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="21" name="Blueberry" gid="10" x="1181.09" y="579.526" width="32" height="32">
+   <properties>
+    <property name="Collides" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="22" name="Blueberry" gid="10" x="1341.87" y="899.494" width="32" height="32">
    <properties>
     <property name="collides" type="bool" value="false"/>
    </properties>
   </object>
-  <object id="18" name="Flower" gid="10" x="1176.32" y="681.406" width="32" height="32"/>
-  <object id="19" name="Flower" gid="10" x="1177.91" y="641.609" width="32" height="32"/>
-  <object id="20" name="Flower" gid="10" x="1179.5" y="606.588" width="32" height="32"/>
-  <object id="21" name="Flower" gid="10" x="1181.09" y="579.526" width="32" height="32"/>
-  <object id="22" name="Flower" gid="10" x="1341.87" y="899.494" width="32" height="32"/>
-  <object id="23" name="Flower" gid="10" x="1292.53" y="897.902" width="32" height="32"/>
-  <object id="24" name="Flower" gid="10" x="1236.81" y="896.31" width="32" height="32"/>
-  <object id="25" name="Flower" gid="10" x="1391.22" y="905.862" width="32" height="32"/>
-  <object id="26" name="Flower" gid="10" x="1437.39" y="902.678" width="32" height="32"/>
-  <object id="27" name="Flower" gid="10" x="1437.39" y="869.248" width="32" height="32"/>
-  <object id="28" name="Mushroom" gid="10" x="1474" y="869.248" width="32" height="32"/>
-  <object id="29" name="Mushroom" gid="10" x="1510.61" y="869.248" width="32" height="32"/>
-  <object id="30" name="Mushroom" gid="10" x="1548.82" y="867.657" width="32" height="32">
+  <object id="23" name="Blueberry" gid="10" x="1292.53" y="897.902" width="32" height="32">
    <properties>
-    <property name="damageHp" type="int" value="30"/>
+    <property name="collides" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="31" name="Mushroom" gid="4" x="1208.16" y="132.207" width="32" height="32"/>
-  <object id="32" name="Mushroom" gid="4" x="1222.48" y="167.229" width="32" height="32"/>
-  <object id="33" name="Mushroom" gid="4" x="1252.73" y="162.453" width="32" height="32"/>
-  <object id="34" name="Mushrooom" gid="4" x="792.676" y="33.5107" width="32" height="32">
+  <object id="24" name="Blueberry" gid="10" x="1236.81" y="896.31" width="32" height="32">
    <properties>
-    <property name="restoreHp" type="int" value="50"/>
+    <property name="collides" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="35" name="Mushroom" gid="4" x="835.657" y="28.7351" width="32" height="32">
+  <object id="25" name="Blueberry" gid="10" x="1391.22" y="905.862" width="32" height="32">
    <properties>
-    <property name="restoreHp" type="int" value="50"/>
+    <property name="collides" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="36" name="Flower" gid="4" x="857.943" y="35.1026" width="32" height="32"/>
+  <object id="26" name="Blueberry" gid="10" x="1437.39" y="902.678" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="27" name="Blueberry" gid="10" x="1437.39" y="869.248" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="28" name="Blueberry" gid="10" x="1474" y="869.248" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="29" name="Blueberry" gid="10" x="1510.61" y="869.248" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="30" name="Blueberry" gid="10" x="1548.82" y="867.657" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+    <property name="damageHp" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="31" name="Flower" gid="4" x="1208.16" y="132.207" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="32" name="Flower" gid="4" x="1222.48" y="167.229" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="33" name="Flower" gid="4" x="1252.73" y="162.453" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="34" name="Flower" gid="4" x="792.676" y="33.5107" width="32" height="32">
+   <properties>
+    <property name="colllides" type="bool" value="true"/>
+    <property name="restoreHp" type="int" value="20"/>
+   </properties>
+  </object>
+  <object id="35" name="Flower" gid="4" x="835.657" y="28.7351" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+    <property name="restoreHp" type="int" value="20"/>
+   </properties>
+  </object>
+  <object id="36" name="Flower" gid="4" x="857.943" y="35.1026" width="32" height="32">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="37" name="Flower" gid="4" x="834.065" y="60.5727" width="32" height="32">
    <properties>
-    <property name="restoreHp" type="int" value="50"/>
+    <property name="collides" type="bool" value="true"/>
+    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="38" name="Flower" gid="4" x="873.862" y="63.7564" width="32" height="32">
    <properties>
-    <property name="restoreHp" type="int" value="50"/>
+    <property name="collides" type="bool" value="true"/>
+    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="41" name="Flower" gid="4" x="609.609" y="94.0022" width="32" height="32">
    <properties>
-    <property name="restoreHp" type="int" value="50"/>
+    <property name="collides" type="bool" value="true"/>
+    <property name="restoreHp" type="int" value="20"/>
    </properties>
   </object>
   <object id="42" name="Flower" gid="4" x="635.079" y="97.186" width="32" height="32">
    <properties>
+    <property name="collides" type="bool" value="true"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
   <object id="43" name="Flower" gid="4" x="609.609" y="122.656" width="32" height="32">
    <properties>
+    <property name="collides" type="bool" value="true"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
   <object id="44" name="Flower" gid="4" x="647.815" y="132.207" width="32" height="32">
    <properties>
+    <property name="collides" type="bool" value="true"/>
     <property name="restoreHp" type="int" value="50"/>
    </properties>
   </object>
