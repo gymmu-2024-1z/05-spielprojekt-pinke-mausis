@@ -1,3 +1,4 @@
+import Flower from "../../gameObjects/pickups/flower"
 import Base2DScene from "../base-2d-scene"
 
 /**
@@ -18,5 +19,23 @@ export default class Level03 extends Base2DScene {
 
   create() {
     super.create("map-level-03")
+  }
+
+  pickUp(actor, item) {
+    super.pickUp(actor, item)
+
+    if (item instanceof Flower) {
+      if (item.props.goToWorld === "level-02") {
+        this.scene.start("level-02")
+      }
+    }
+  }
+  update() {
+    super.update()
+
+    if (this.player.hp <= 0) {
+      // Wenn Player 0 Leben hat, startet eine GameOver Szene
+      this.scene.start("GameOverScene")
+    }
   }
 }

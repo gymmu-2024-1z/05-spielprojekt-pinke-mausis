@@ -4,7 +4,7 @@ import EVENTS from "../../events"
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   keys = {}
   hp = 10
-  maxHp = 100
+  maxHp = 200
   speed = 100
 
   constructor(scene, x, y) {

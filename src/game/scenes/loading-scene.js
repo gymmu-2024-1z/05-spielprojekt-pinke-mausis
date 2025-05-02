@@ -14,7 +14,11 @@ export default class LoadingScene extends Phaser.Scene {
    */
   preload() {
     // Lade das Spritesheet für den Spieler.
-    this.load.spritesheet("player", "./assets/player.png", {
+    this.load.spritesheet("player", "./assets/player-2.png", {
+      frameWidth: 32,
+      frameHeight: 32,
+    })
+    this.load.spritesheet("mouse", "./assets/player.png", {
       frameWidth: 32,
       frameHeight: 32,
     })
@@ -70,8 +74,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_right",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 6,
-        end: 8,
+        start: 8,
+        end: 10,
       }),
       frameRate: 10,
       repeat: -1,
@@ -80,8 +84,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_left",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 3,
-        end: 5,
+        start: 4,
+        end: 6,
       }),
       frameRate: 10,
       repeat: -1,
@@ -89,8 +93,8 @@ export default class LoadingScene extends Phaser.Scene {
     this.anims.create({
       key: "player_up",
       frames: this.anims.generateFrameNumbers("player", {
-        start: 9,
-        end: 11,
+        start: 12,
+        end: 14,
       }),
       frameRate: 10,
       repeat: -1,
@@ -100,6 +104,56 @@ export default class LoadingScene extends Phaser.Scene {
       frames: this.anims.generateFrameNumbers("player", {
         start: 0,
         end: 2,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+  }
+  createAnimations() {
+    this.anims.create({
+      key: "mouse_idle",
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 2,
+        end: 2,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+
+    this.anims.create({
+      key: "mouse_right", //mouse_up
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 16,
+        end: 18,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+
+    this.anims.create({
+      key: "mouse_left", //mouse_left
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 6,
+        end: 8,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+
+    this.anims.create({
+      key: "mouse_down", //mouse_right
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 11,
+        end: 13,
+      }),
+      frameRate: 10,
+      repeat: -1,
+    })
+    this.anims.create({
+      key: "mouse_up", //mouse_down
+      frames: this.anims.generateFrameNumbers("mouse", {
+        start: 2,
+        end: 4,
       }),
       frameRate: 10,
       repeat: -1,

@@ -2,19 +2,28 @@ import Phaser from "phaser"
 
 export default class NPC extends Phaser.Physics.Arcade.Sprite {
   hp = 10
-  maxHp = 100
+  maxHp = 200
   #speed = 100
   stepsLeft = 60
   move = "left"
 
   constructor(scene, x, y) {
-    super(scene, x, y, "player")
+    super(scene, x, y, "mouse")
     this.scene.add.existing(this)
     this.scene.physics.add.existing(this, false)
     this.body.collideWorldBounds = false
     this.setOrigin(0.5, 0.5)
     this.setSize(24, 24, false)
     this.setOffset(4, 8)
+
+    this.setControlls()
+  }
+
+  setControlls() {
+    this.a = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
+    this.w = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
+    this.s = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S)
+    this.d = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D)
   }
 
   /**
@@ -34,43 +43,45 @@ export default class NPC extends Phaser.Physics.Arcade.Sprite {
     return this.#speed
   }
 
+  setControls() {
+    this.a = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
+    this.w = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
+    this.s = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S)
+    this.d = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D)
+  }
+
   update() {
     const { body } = this
     let isIdle = true
 
-    this.stepsLeft--
-    if (this.stepsLeft <= 0) {
-      this.move = getRandomDirection()
-      this.stepsLeft = 60 + Math.floor(Math.random() * 60)
-    }
-
     this.body.setVelocityX(0)
     this.body.setVelocityY(0)
 
-    if (this.move === "left") {
+    if (this.a.isDown) {
       body.setVelocityX(-this.speed)
-      if (isIdle) this.anims.play("player_left", true)
-      isIdle = false
-    }
-    if (this.move === "right") {
-      this.body.setVelocityX(this.speed)
-      if (isIdle) this.anims.play("player_right", true)
+      if (isIdle) this.anims.play("mouse_left", true)
       isIdle = false
     }
 
-    if (this.move === "up") {
-      body.setVelocityY(-this.speed)
-      if (isIdle) this.anims.play("player_up", true)
+    if (this.w.isDown) {
+      this.body.setVelocityY(-this.speed)
+      if (isIdle) this.anims.play("mouse_right", true)
       isIdle = false
     }
-    if (this.move === "down") {
+
+    if (this.s.isDown) {
       body.setVelocityY(this.speed)
-      if (isIdle) this.anims.play("player_down", true)
+      if (isIdle) this.anims.play("mouse_up", true)
+      isIdle = false
+    }
+    if (this.d.isDown) {
+      body.setVelocityX(this.speed)
+      if (isIdle) this.anims.play("mouse_down", true)
       isIdle = false
     }
 
     if (isIdle) {
-      this.anims.play("player_idle", true)
+      this.anims.play("mouse_idle", true)
     }
   }
 
