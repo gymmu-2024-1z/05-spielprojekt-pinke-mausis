@@ -44,5 +44,9 @@
 - Spielkonzept geändert, in der Präsentation eingetragen. Blaue Erdbeere.
 
 23. april
+
+- npc kann mit a s d und w gesteuert werden
+- Grammatikkorrektur in Präsentation geändert.
+
 24. mai
 25. mai
