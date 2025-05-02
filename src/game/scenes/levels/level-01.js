@@ -84,14 +84,14 @@ export default class Level01 extends Base2DScene {
   pickUp(actor, item) {
     super.pickUp(actor, item)
 
-    // Behandelt, was passiert, wenn der Spieler eine Blume oder einen Pilz aufnimmt.
+    // was passiert wenn flower oder mushroom aufgenommen weerden
     if (item instanceof Flower) {
       this.player.addKey("level-02")
       this.player.increaseSpeed(100)
       this.player.heal(20)
     } else if (item instanceof Mushroom) {
       this.player.decreaseSpeed(100)
-      this.player.damage(200)
+      this.player.damage(10)
     }
   }
 
