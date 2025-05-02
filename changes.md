@@ -19,8 +19,25 @@
   bewegen kann. Die Felder (wo das tileset drinnen verwendet wird) haben wir
   umdesignt. Ausserdem haben wir das Spielintro geändert.
 
-4. april: gianna: tileset (also die Spielfelder der verschiedenen Levels)
-   bearbeitet, player und npc in den code eingeführt, spielintro ggeändert,
-   veränderungen in changes.md eingeschrieben, version 0.2.0 erstellt sophie:
-   dino gezeichnet, an ayaan geschickt ayaan: maus (npc) gezeichnet, dino
-   hinzugefügt
+4. april:
+
+- tileset (also die Spielfelder der verschiedenen Levels) bearbeitet
+- player und npc in den code eingeführt
+- spielintro ggeändert
+- veränderungen in changes.md eingeschrieben
+- version 0.2.0 erstellt
+- dino gezeichnet
+- an ayaan geschickt
+- maus (npc) gezeichnet
+- dino hinzugefügt
+
+11. april:
+
+- bewegungscodes geändert
+- Playing Mausimission zu Masusimission geändert
+- in der Präsentation geschrieben, von wem es ist.
+
+22. april
+23. april
+24. mai
+25. mai
