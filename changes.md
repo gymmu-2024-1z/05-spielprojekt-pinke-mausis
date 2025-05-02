@@ -48,5 +48,14 @@
 - npc kann mit a s d und w gesteuert werden
 - Grammatikkorrektur in Präsentation geändert.
 
-24. mai
-25. mai
+1. mai
+
+- player standort geändert
+- "bluestrawberry" aus atlas pickups geändert
+- bei blumen bekommt man Hp punkte, bei Erdbeeren verlierrt man welche
+- loading scene bearbeitet
+- maus animation funktioniert
+
+2. mai
+
+-
