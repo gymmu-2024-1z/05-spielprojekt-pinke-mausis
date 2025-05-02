@@ -37,7 +37,12 @@
 - Playing Mausimission zu Masusimission geändert
 - in der Präsentation geschrieben, von wem es ist.
 
-22. april
+22. april:
+
+- man läuft nd mehr durch die Erbeeren im Layer Obstacles hindurch
+- man kann jetzt charakter eingenschaften hinzufügen mit bool.
+- Spielkonzept geändert, in der Präsentation eingetragen. Blaue Erdbeere.
+
 23. april
 24. mai
 25. mai
