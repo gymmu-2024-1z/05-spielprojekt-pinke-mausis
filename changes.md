@@ -20,5 +20,7 @@
   umdesignt. Ausserdem haben wir das Spielintro geändert.
 
 4. april: gianna: tileset (also die Spielfelder der verschiedenen Levels)
-   bearbeitet, player und npc in den code eingeführt sophie: dino gezeichnet, an
-   ayaan geschickt ayaan: maus (npc) gezeichnet, dino hinzugefügt
+   bearbeitet, player und npc in den code eingeführt, spielintro ggeändert,
+   veränderungen in changes.md eingeschrieben, version 0.2.0 erstellt sophie:
+   dino gezeichnet, an ayaan geschickt ayaan: maus (npc) gezeichnet, dino
+   hinzugefügt
