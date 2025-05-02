@@ -18,3 +18,7 @@
   haben wir die Buchstaben A,S,W und D ausgewählt, mit denen man die Maus
   bewegen kann. Die Felder (wo das tileset drinnen verwendet wird) haben wir
   umdesignt. Ausserdem haben wir das Spielintro geändert.
+
+4. april: gianna: tileset (also die Spielfelder der verschiedenen Levels)
+   bearbeitet, player und npc in den code eingeführt sophie: dino gezeichnet, an
+   ayaan geschickt ayaan: maus (npc) gezeichnet, dino hinzugefügt
