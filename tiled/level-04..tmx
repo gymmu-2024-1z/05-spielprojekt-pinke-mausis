@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="12">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32" spacing="2" margin="1" tilecount="12" columns="4">
+  <image source="../public/assets/tileset.png" width="136" height="108"/>
+  <tile id="1">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="tileset" tilewidth="32" tileheight="32" spacing="2" margin="1" tilecount="12" columns="4">
+  <image source="../public/assets/tileset.png" width="136" height="108"/>
+  <tile id="1">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="25" name="tileset" tilewidth="32" tileheight="32" spacing="2" margin="1" tilecount="12" columns="4">
+  <image source="../public/assets/tileset.png" width="136" height="108"/>
+  <tile id="1">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="37" name="tileset" tilewidth="32" tileheight="32" spacing="2" margin="1" tilecount="12" columns="4">
+  <image source="../public/assets/tileset.png" width="136" height="108"/>
+  <tile id="1">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Background" width="20" height="15">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="2" name="Obstacles" width="20" height="15">
+  <data encoding="csv">
+18,18,18,0,0,0,0,0,0,0,0,0,0,0,0,0,11,18,18,18,
+18,16,15,16,16,15,0,15,15,15,0,15,16,15,0,0,11,11,11,18,
+18,0,15,16,16,15,0,15,16,15,0,15,0,15,16,0,0,11,11,18,
+18,0,15,15,15,15,0,15,15,15,0,15,15,15,16,0,0,0,11,18,
+18,0,0,16,15,0,0,14,0,0,0,16,16,16,16,0,0,0,11,18,
+0,0,0,15,16,0,0,0,0,18,0,0,0,0,0,0,22,0,0,11,
+0,0,15,14,16,16,0,0,0,18,18,18,18,0,0,22,0,0,15,0,
+0,0,14,15,0,0,0,15,0,0,0,0,0,15,0,0,15,0,15,0,
+0,0,14,15,0,15,0,15,0,15,15,15,0,15,15,0,15,0,15,0,
+0,0,0,15,0,15,16,15,0,15,0,15,0,15,16,15,15,0,0,0,
+14,0,0,0,15,16,15,16,0,15,15,15,0,15,16,16,15,17,15,0,
+14,16,0,0,0,0,16,16,0,0,0,0,16,0,16,16,0,17,17,18,
+14,16,16,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,18,
+14,16,16,16,0,0,11,11,11,0,18,18,18,18,18,0,0,0,0,18,
+14,14,14,14,14,0,11,11,18,18,18,18,18,18,18,18,18,18,18,18
+</data>
+ </layer>
+ <layer id="4" name="Spawnpoint" width="20" height="15">
+  <data encoding="csv">
+18,18,18,0,0,0,0,0,0,0,0,0,0,0,0,0,11,18,18,18,
+18,16,15,16,16,15,0,15,15,15,0,15,16,15,0,0,11,11,11,18,
+18,0,15,16,16,15,0,15,16,15,0,15,0,15,16,0,0,11,11,18,
+18,0,15,15,15,15,0,15,15,15,0,15,15,15,16,0,0,0,11,18,
+18,0,0,16,15,0,0,14,0,41,0,16,16,16,16,0,0,0,11,18,
+0,0,0,15,16,0,0,0,0,18,0,0,0,0,0,0,22,0,0,11,
+0,0,15,14,16,16,0,0,0,18,18,18,18,0,0,22,0,0,15,0,
+0,0,14,15,0,0,0,15,0,0,0,0,0,15,0,0,15,0,15,0,
+0,0,14,15,0,15,0,15,0,15,15,15,0,15,15,0,15,0,15,0,
+0,0,0,15,0,15,16,15,0,15,0,15,0,15,16,15,15,0,0,0,
+14,0,0,0,15,16,15,16,0,15,15,15,0,15,16,16,15,17,15,0,
+14,16,0,0,0,0,16,16,0,0,0,0,16,0,16,16,0,17,17,18,
+14,16,16,0,0,0,0,0,11,0,0,0,0,0,0,0,0,0,0,18,
+14,16,16,16,0,0,11,11,11,0,18,18,18,18,18,0,0,0,0,18,
+14,14,14,14,14,0,11,11,18,18,18,18,18,18,18,18,18,18,18,18
+</data>
+ </layer>
+ <objectgroup id="5"/>
+ <objectgroup id="3" name="Items"/>
+</map>

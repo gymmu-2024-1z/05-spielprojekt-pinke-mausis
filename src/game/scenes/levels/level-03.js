@@ -10,7 +10,6 @@ export default class Level03 extends Base2DScene {
   }
 
   preload() {
-    // Load the assets here
     this.load.tilemapTiledJSON(
       "map-level-03",
       "./assets/maps/map-level-03.json",

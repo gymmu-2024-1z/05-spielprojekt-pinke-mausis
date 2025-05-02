@@ -7,6 +7,7 @@ import Level03 from "./scenes/levels/level-03.js"
 import UIScene from "./scenes/ui-scene.js"
 import DebugScene from "./scenes/debug-scene.js"
 import GameOverScene from "./scenes/gameover-scene.js"
+import Level04 from "./scenes/level-04.js"
 
 const config = {
   type: Phaser.AUTO,
@@ -24,6 +25,7 @@ const config = {
     Level01,
     Level02,
     Level03,
+    Level04,
     GameOverScene,
   ], // Die Szenen des Spiels, hier können noch weitere Szenen angehängt werden.
   physics: {

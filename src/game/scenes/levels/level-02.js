@@ -3,28 +3,19 @@ import Base2DScene from "../base-2d-scene"
 /**
  * Spiellogik für das Level02.
  */
-export default class Level02 extends Base2DScene {
+export default class Level04 extends Base2DScene {
   constructor() {
-    super({ key: "level-02" })
+    super({ key: "level-04" })
   }
 
   preload() {
-    // Load the assets here
     this.load.tilemapTiledJSON(
-      "map-level-02",
-      "./assets/maps/map-level-02.json",
+      "map-level-04",
+      "./assets/maps/map-level-04.json",
     )
   }
 
   create() {
-    super.create("map-level-02")
-  }
-  update() {
-    super.update()
-
-    if (this.player.hp <= 0) {
-      // Wenn Player 0 Leben hat, startet eine GameOver Szene
-      this.scene.start("GameOverScene")
-    }
+    super.create("map-level-04")
   }
 }

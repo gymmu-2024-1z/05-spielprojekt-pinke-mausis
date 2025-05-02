@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="55" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="57">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="55" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="58">
  <editorsettings>
   <export target="../public/assets/maps/map-level-03.json" format="json"/>
  </editorsettings>
@@ -91,13 +91,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -117,7 +117,7 @@
  <objectgroup id="4" name="Items">
   <object id="3" name="Mushroom" gid="3" x="1504" y="64" width="32" height="32">
    <properties>
-    <property name="damageHp" type="int" value="100"/>
+    <property name="damageHp" type="int" value="10"/>
    </properties>
   </object>
   <object id="4" name="Mushroom" gid="3" x="147.079" y="212.571" width="32" height="32">
@@ -140,14 +140,14 @@
     <property name="damageHp" type="int" value="30"/>
    </properties>
   </object>
-  <object id="10" name="Flower" gid="3" x="641.447" y="901.086" width="32" height="32">
+  <object id="10" name="Mushroom" gid="3" x="641.447" y="901.086" width="32" height="32">
    <properties>
     <property name="damageHp" type="int" value="2"/>
    </properties>
   </object>
   <object id="11" name="Mushroom" gid="3" x="988.477" y="646.385" width="32" height="32">
    <properties>
-    <property name="damageHp" type="int" value="30"/>
+    <property name="goToWorld" value="level-04"/>
    </properties>
   </object>
   <object id="13" name="Blueberry" gid="10" x="1120.6" y="640.018" width="32" height="32">
@@ -168,7 +168,7 @@
   </object>
   <object id="16" name="Blueberry" gid="10" x="1154.03" y="708.468" width="32" height="32">
    <properties>
-    <property name="collides" type="bool" value="false"/>
+    <property name="collides" type="bool" value="true"/>
    </properties>
   </object>
   <object id="17" name="Blueberry" gid="10" x="1144.48" y="676.631" width="32" height="32">
@@ -244,7 +244,7 @@
   </object>
   <object id="31" name="Flower" gid="4" x="1208.16" y="132.207" width="32" height="32">
    <properties>
-    <property name="collides" type="bool" value="false"/>
+    <property name="collides" type="bool" value="true"/>
    </properties>
   </object>
   <object id="32" name="Flower" gid="4" x="1222.48" y="167.229" width="32" height="32">
@@ -318,6 +318,9 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="Doors">
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
   <object id="2" name="Cave" gid="7" x="1472" y="32" width="32" height="32">
    <properties>
     <property name="goToWorld" value="level-01"/>
